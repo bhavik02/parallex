@@ -11,31 +11,51 @@ padding:0;
 body{background:linear-gradient(purple,pink);
 height:100vh;
 width:100%;
+background-repeat:no-repeat;
 overflow-x:hidden;
 }
 h1{color:white;
 position:absolute;
-padding:50px 100px;
-font-size:7vw;
-right:-200px;}
-  @media (max-width:450px){
-    #header{
-overflow-x:hidden;
-position:relative;}
-  }
-
+right:85%;
+margin-top:2.4em;
+font-size:10vw;
+white-space:nowrap;
+animation:flow 10s ease-in infinite;
+}
+@keyframes flow{
+0%{right:85%;}
+100%{right:-50%;}
+}
+#head{height:100vh;
+width:100%;
+display:flex;}
+section{position:absolute;
+padding:250px 100px;
+}
+section{background:purple;
+color:white;
+position:relative;
+width:100%;}
+@media (max-width:600px){
+h1{font-size:20vw;
+margin-top:4em;}
+section{padding:10px 10px;}
+}
 </style>
 </head>
 <body>
-  <div id="header">
+<div id="head">
 <h1 id="text">hello guys</h1>
-  </div>
+</div>
+
 <section>
+<h2>parallex scroll</h2>
 <p>Eid-al-Fitr (also written and pronounced as Eid-ul-Fitr) is the first of two Eids of the Islamic (lunar) calendar year. It rounds off the month of Ramadan, which Muslims observe every year to acknowledge Allah’s revelation of the Quran to the Prophet Muhammad.
 Not to be confused with Eid-al-Adha, this Eid comes after the holy month of Ramadan, when many Muslims will not eat or drink during the daytime for a 29- or 30-day period. It’s part of Sawm (fasting) commitment, one of the five pillars of Islam.</p><br>
 <p>The exact date is never certain far in advance, as religious authorities in various countries rely on the sighting of the Eid crescent moon to announce when it will officially begin. It can be delayed by a day if the sky is too bright when the moon is out, or if clouds obstruct it. This is also the reason Ramadan can start on different days in different parts of the world.
 Eid-al-Fitr is regarded as a time to celebrate, with Muslims gathering their friends and family to show gratitude toward God following the previous month of reflection. The holiday serves as a great reminder for Muslims to be grateful for what they have, and to share with those who may be less fortunate.</p>
 <br></p>
+
 </section>
 </body>
 </html>
