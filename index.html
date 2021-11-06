@@ -8,12 +8,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{margin:0;
 padding:0;
+
 }
 body{
 height:100vh; width:100%; overflow-x:hidden;
 }
 #home{background-image:url("https://cdn.pixabay.com/photo/2012/08/25/22/22/saturn-54999__480.jpg");
-
+width:100%;
 background-repeat:no-repeat; background-size:cover; background-position:center;}
 #head{display:flex; justify-content:space-between; align-items:center; padding:20px 100px;
 
@@ -29,32 +30,28 @@ color:black;}
 position:relative;
 justify-content:center;
 }
-.photo #rocket{margin-top:280px; margin-left:-50px; position:relative;
+.photo #rocket{margin-top:80px; margin-left:-50px; position:relative;
 }
-.photo #astro{margin-top:200px; margin-left:650px;width:150px;height:150px;
+.photo #astro{margin-top:80px; margin-left:650px;width:150px;height:150px; position:relative;
 }
-#text, #text2{color:white;
-font-size:9vw;
-position:absolute;
-white-space:nowrap;
-top:40%;text-shadow:0 10px 15px rgba(0,0,0,0.25); font-family:Gabriola;
-left:100%;
-}
- #movetext{overflow-x:hidden; }
-
-
+#text{margin-left:50px;
+color:white;
+font-size:60px;
+margin-top:40%;
+overflow-x:hidden;}
 #text2{display:none;}
 .head{
 width:100%;
 height:100vh;
 overflow:hidden;
 }
-
+#movetext{overflow-x:hidden;}
+#phntext{overflow-x:hidden;}
 .section{height:auto;
 background-image:url("https://thumbs.gfycat.com/HighlevelWearyBubblefish-size_restricted.gif");
 background-size:cover;
 background-position:center;
-overflow-x:hidden;
+overflow:hidden;
 }
 .secdata{color:white;
 margin-top:20px;
@@ -87,34 +84,36 @@ display:flex; justify-content:center; align-items:center; text-align:center;}
 
 
 @media (max-width:850px){
+.hdlogo{overflow-x:hidden; }
 #head .nav{display:none;
 }
-#head{padding-left:10px; padding-top:10px; font-size:16px;}
-#text, #text2{left:80%; top:50%; color:white; overflow-x:hidden;}
+#head{padding-left:10px; padding-top:10px; font-size:16px; }
+#text2{color:white; font-size:30px; margin-top:250px; margin-left:-100%; }
 #text{display:none;}
 #text2{display:flex;}
-.photo #rocket{ margin-top:380px; margin-left:10px;}
-.photo{overflow:hidden;}
-.photo #astro{margin-top:280px;margin-left:90px;width:150px;height:150px;
-}
- #movetext{overflow-x:hidden; position:relative;}
 
-.secdata{margin-bottom:10px;overflow:hidden; position:relative;}
+.phntext{overflow-x:hidden; position:absolute;}
+.photo #rocket{ margin-top:130px; margin-left:10px; position:relative;}
+.photo{overflow-x:hidden;}
+.photo #astro{margin-top:130px;margin-left:90px;width:150px;height:150px; position:relative;
+}
+.secdata{margin-bottom:10px; overflow:hidden; position:relative;}
 .secdata h1{font-size:18px;}
 .secdata p{font-size: 16px; font-family: 'Roboto', sans-serif; padding:10px 10px; font-weight:justify;}
 .section3{height:auto;
 }
-.section3 h1{font-size:16px;overflow:hidden;}
+.section3 h1{font-size:16px;overflow:hidden; position:relative;}
 
-.section3 #factdata{margin-top:50px; margin-bottom:10px; width:80%; overflow:hidden; }
+.section3 #factdata{margin-top:50px; margin-bottom:10px; width:80%;position:relative; overflow:hidden; }
 }
 </style>
 </head>
 <body>
 <div id="home">
 <div id="head">
+<div class="hdlogo">
 <a href="#" class="logo">Our Universe</a>
-
+</div>
 <ul class="nav">
 <li><a href="#" class="active">Home</a></li>
 <li><a href="#">About</a></li>
@@ -123,12 +122,13 @@ display:flex; justify-content:center; align-items:center; text-align:center;}
 </ul>
 </div>
 <div id="movetext">
-<h2 id="text">Explore the universe</h2>
+<h2 id="text">Explore the universe</h2></div>
+<div id="phntext">
 <h2 id="text2">Explore the universe</h2>
 </div>
 <div class="photo">
 
-<img src="/pics/rocket.png" id="rocket" width="100" height="100">
+<img src="rocket.png" id="rocket" width="100" height="100">
 <div id="pic"><img src="astro.png" id="astro"></div>
 </div>
 </div>
@@ -193,12 +193,11 @@ y:100,
 gsap.from("#text",{
 scrollTrigger:{scrub:0.5,},
 
-x:-2200,
+x:900,
 })
-gsap.from("#text2",{
+gsap.to("#text2",{
 scrollTrigger:{scrub:0.5,},
-
-x:-1200,
+x:1500,
 })
 </script>
 
