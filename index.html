@@ -8,7 +8,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{margin:0;
 padding:0;
-
 }
 body{
 height:100vh; width:100%; overflow-x:hidden;
@@ -152,16 +151,15 @@ margin-top:15px;
 font-size:17px;
 opacity:0.9;
 }
-.wave{width:100%;
-background-image:url("https://o.remove.bg/downloads/1838cdb9-67b9-4a3c-83b3-a72ae45e8fb0/imgonline-com-ua-ReplaceColor-lEBDce3lDmLC-removebg-preview.png");
-top:-70px;
-height:70px;
+.motion{height:70px;
+width:100%;
+background:url("bgblue.png");
+
 position:absolute;
 left:0;
-background-size:1000px 100px;
+top:-70px;
+background-size:1200px 100px;}
 
-
-}
 #wave1{z-index:1000;opacity:1;bottom:0;
 animation: animatewave 4s linear infinite;
 }
@@ -184,7 +182,6 @@ animation: animatewave02 3s linear infinite;
 }
 100%{background-position-x:1000px;}
 }
-
 
 
 @media (max-width:820px){
@@ -211,17 +208,13 @@ animation: animatewave02 3s linear infinite;
 
 .section3 #factdata{width:200px;height:200px; margin-top:50px; margin-bottom:10px; width:80%;position:relative; overflow:hidden; }
 }
-
-
-
-
 </style>
 </head>
 <body>
 <div id="home">
 <div id="head" >
 <div class="hdlogo">
-<a href="#" class="logo">Our Universe</a>
+<a href="#" class="logo" style="color:#00ffff;">Our Universe</a>
 </div>
 <ul class="nav" >
 <li><a href="#" class="active">Home</a></li>
@@ -246,7 +239,7 @@ animation: animatewave02 3s linear infinite;
 <div class="secdata">
 <div class="pichead" style="display:flex; align-items:center; justify-content:center;">
 <img src="https://francescosyloslabini.files.wordpress.com/2019/01/ezgif.com-video-to-gif.gif" width="60" height="60">
-<h1>About our universe</h1>
+<h1 style="color:cyan;">About our universe</h1>
 <img src="https://francescosyloslabini.files.wordpress.com/2019/01/ezgif.com-video-to-gif.gif" width="60" height="60">
 </div>
 <p>The universe is all of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy.
@@ -257,16 +250,14 @@ The Milky Way is but one of billions of galaxies in the observable universe — 
 <p>Today it is known that Earth is only a small ball of rock in a space of unimaginable vastness and that the birth of the solar system was probably only one event among many that occurred against the backdrop of an already mature universe.
 All scientific thinking on the nature of the universe can be traced to the distinctive geometric patterns formed by the stars in the night sky. Even prehistoric people must have noticed that, apart from a daily rotation (which is now understood to arise from the spin of Earth), the stars did not seem to move with respect to one another: the stars appear “fixed.” 
 </p>
-<!--
-<img id="star" src="https://render.fineartamerica.com/images/rendered/default/print/8/8/break/images/artworkimages/medium/2/dark-starry-sky-sololos.jpg">
---></div>
+</div>
 </div>
 
 
 <div class="section3" id="thefact">
 <div class="head3">
 <img id="bulb" src="https://i.gifer.com/H90l.gif" width="70" height="50">
-<h1>Some interesting facts on universe</h1>
+<h1 style="color:#00ffff;">Some interesting facts on universe</h1>
 <img id="bulb" src="https://i.gifer.com/H90l.gif" width="70" height="50">
 </div>
 <div class="facts">
@@ -321,24 +312,29 @@ All scientific thinking on the nature of the universe can be traced to the disti
 
 
 <div class="section4" id="part4">
-<div class="waves">
-<div class="wave" id="wave1">
+<div class="thewave">
+<div class="motion" id="wave1">
 
 </div>
-<div class="wave" id="wave2">
+<div class="motion" id="wave2">
 
 </div>
-<div class="wave" id="wave3">
+<div class="motion" id="wave3">
+
+</div>
+<div class="motion" id="wave4">
 
 </div>
 </div>
+<div>
 <ul class="smicon">
 <li><a href="#" id="insta"><i class="fab fa-instagram"></i></a></li>
 <li><a href="#" id="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
 <li><a href="#"id="mail"><i class="fas fa-envelope-square"></i></a></li>
 <li><a href="#"id="facebook"><i class="fab fa-facebook"></i></a></li>
 </ul>
-
+</div>
+<div>
 <ul class="menu">
 <li><a href="#home">Home &nbsp;&nbsp;|</a></li>
 <li><a href="#about">About &nbsp;&nbsp;|</a></li>
@@ -346,6 +342,7 @@ All scientific thinking on the nature of the universe can be traced to the disti
 <li><a href="#part4">Contact</a></li>
 
 </ul>
+</div>
 <p>©2021 JdWeb</p>
 </div>
 
